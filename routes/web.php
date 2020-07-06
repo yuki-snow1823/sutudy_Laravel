@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('/home');
 });
 
+// たくさんのバックスラッシュでグローバルに呼び出している
 Route::get('auth/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('auth/register', 'Auth\RegisterController@register');
 
