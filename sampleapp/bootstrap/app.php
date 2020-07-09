@@ -26,6 +26,7 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
+// singletonは一個しかインスタンスを作らない。その後は同じものが出来上がる。
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
